@@ -3,19 +3,18 @@ import { uploadLinks } from "@/lib/links";
 const uploadButtons = [
   {
     label: "Upload Photos",
-    description: "Link 1",
     href: uploadLinks.photoUpload1,
   },
-  {
-    label: "Upload Photos",
-    description: "Link 2",
-    href: uploadLinks.photoUpload2,
-  },
-  {
-    label: "Upload Photos",
-    description: "Link 3",
-    href: uploadLinks.photoUpload3,
-  },
+  // {
+  //   label: "Upload Photos",
+  //   description: "Link 2",
+  //   href: uploadLinks.photoUpload2,
+  // },
+  // {
+  //   label: "Upload Photos",
+  //   description: "Link 3",
+  //   href: uploadLinks.photoUpload3,
+  // },
 ];
 
 export default function Home() {
@@ -48,13 +47,12 @@ export default function Home() {
               className="group flex w-full max-w-xs flex-col items-center gap-0.5 rounded-full border border-rose-200 bg-white/70 px-8 py-6 text-rose-900 shadow-md backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-xl"
             >
               <span className="text-xl font-semibold">{button.label}</span>
-              <span className="text-sm text-rose-500">{button.description}</span>
             </a>
           ))}
         </div>
 
         <p className="mt-10 text-sm text-rose-600/70">
-          Tip: you can upload through any of the links above.
+          Tip: you can upload through the link above.
         </p>
       </section>
     </main>
